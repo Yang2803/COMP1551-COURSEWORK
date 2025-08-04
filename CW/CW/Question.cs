@@ -23,7 +23,7 @@ public abstract class BaseQuestion
         Text = text;
     }
 
-    // 🔹 Abstract method để đánh giá đáp án
+    
     public abstract bool CheckAnswer(string userAnswer);
 
     public override string ToString()
@@ -109,4 +109,5 @@ public class OpenEndedQuestion : BaseQuestion
     {
         return AcceptableAnswers.Exists(ans => ans.Equals(userAnswer, StringComparison.OrdinalIgnoreCase));
     }
+
 }
