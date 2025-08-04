@@ -72,7 +72,7 @@ namespace CW
             for (int i = 0; i < questions.Count; i++)
             {
                 var q = questions[i];
-                string playerAnswer = i < playerAnswers.Count ? playerAnswers[i] : "Không có đáp án";
+                string playerAnswer = i < playerAnswers.Count ? playerAnswers[i] : "No Answer";
 
                 allAnswers.AppendLine($"Question {i + 1}: {q.Text}");
 
@@ -110,3 +110,4 @@ namespace CW
 
 }
 }
+
